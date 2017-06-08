@@ -1,18 +1,18 @@
 {
-  "name": "my-eslint-bible",
+  "name": "eslint-config-hfreire",
   "description": "My ESLint configuration style rules bible",
   "version": "0.0.0",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hfreire/my-eslint-bible.git"
+    "url": "git+https://github.com/hfreire/eslint-config-hfreire.git"
   },
   "author": "Hugo Freire <hugo@exec.sh>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hfreire/my-eslint-bible/issues"
+    "url": "https://github.com/hfreire/eslint-config-hfreire/issues"
   },
-  "homepage": "https://github.com/hfreire/my-eslint-bible#readme",
+  "homepage": "https://github.com/hfreire/eslint-config-hfreire#readme",
   "dependencies": {
     "eslint-config-standard": "10.2.1"
   },
@@ -47,7 +47,7 @@
     "lint": "node_modules/.bin/eslint .",
     "coverage": "node_modules/.bin/istanbul cover --include-all-sources --root src --print detail ./node_modules/mocha/bin/_mocha -- --recursive test",
     "test": "npm run lint && npm run coverage",
-    "compile": "npm run clean && mkdir -p lib && ./node_modules/.bin/babel src/ -d lib && mv ./lib/my-eslint-bible.js ./lib/index.js",
+    "compile": "npm run clean && mkdir -p lib && ./node_modules/.bin/babel src/ -d lib && mv ./lib/eslint-config-hfreire.js ./lib/index.js",
     "prepublish": "npm run compile",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "semantic-release": "./node_modules/.bin/semantic-release pre && npm publish && node_modules/.bin/semantic-release post",

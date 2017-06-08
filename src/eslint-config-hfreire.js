@@ -5,7 +5,6 @@ module.exports = {
   env: {
     node: true
   },
-  parser: 'babel-eslint',
   plugins: [
     'mocha'
   ],
