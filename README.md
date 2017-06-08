@@ -14,3 +14,6 @@
 ```
 npm install eslint-config-hfreire
 ```
+
+### Used by
+* [random-http-useragent](https://github.com/hfreire/random-http-useragent) - Get a random and legit user-agent :shipit: for your HTTP client
