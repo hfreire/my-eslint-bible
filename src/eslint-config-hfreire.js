@@ -25,7 +25,6 @@ module.exports = {
     'promise/param-names': 'error',
     'promise/catch-or-return': 'error',
     'promise/no-native': 'error',
-    'promise/no-promise-in-callback': 'error',
     'promise/no-callback-in-promise': 'error',
     'mocha/no-exclusive-tests': 'error',
     'mocha/no-global-tests': 'error',
@@ -34,8 +33,7 @@ module.exports = {
     'unicorn/filename-case': [ 'error', { 'case': 'kebabCase' } ],
     'unicorn/no-abusive-eslint-disable': 'error',
     'unicorn/no-process-exit': 'error',
-    'unicorn/no-new-buffer': 'error',
-    'unicorn/custom-error-definition': 'error'
+    'unicorn/no-new-buffer': 'error'
   },
   globals: {
     'describe': true,
