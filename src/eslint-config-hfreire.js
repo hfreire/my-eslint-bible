@@ -13,16 +13,42 @@ module.exports = {
     node: true
   },
   plugins: [
-    'mocha'
+    'json',
+    'mocha',
+    'promise',
+    'standard',
+    'unicorn'
   ],
+  rules: {
+    'promise/always-return': 'off',
+    'promise/no-return-wrap': 'error',
+    'promise/param-names': 'error',
+    'promise/catch-or-return': 'error',
+    'promise/no-native': 'error',
+    'promise/no-promise-in-callback': 'error',
+    'promise/no-callback-in-promise': 'error',
+    'mocha/no-exclusive-tests': 'error',
+    'mocha/no-global-tests': 'error',
+    'mocha/no-identical-title': 'error',
+    'unicorn/catch-error-name': [ 'error', { 'name': 'error' } ],
+    'unicorn/filename-case': [ 'error', { 'case': 'kebabCase' } ],
+    'unicorn/no-abusive-eslint-disable': 'error',
+    'unicorn/no-process-exit': 'error',
+    'unicorn/no-new-buffer': 'error',
+    'unicorn/custom-error-definition': 'error'
+  },
   globals: {
-    describe: true,
-    it: true,
-    before: true,
-    beforeEach: true,
-    after: true,
-    afterEach: true,
-    td: true,
-    should: true
+    'describe': true,
+    'it': true,
+    'expect': true,
+    'request': true,
+    'before': true,
+    'beforeEach': true,
+    'after': true,
+    'afterEach': true,
+    'mockery': true,
+    'sinon': true,
+    'td': true,
+    '_': true
   }
 }

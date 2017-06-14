@@ -8,13 +8,12 @@
 [![Version](https://img.shields.io/npm/v/eslint-config-hfreire.svg)](https://www.npmjs.com/package/eslint-config-hfreire)
 [![Downloads](https://img.shields.io/npm/dt/eslint-config-hfreire.svg)](https://www.npmjs.com/package/eslint-config-hfreire) 
 
-### Features
-
 ### How to install
 ```
 npm install eslint-config-hfreire
 ```
 
 ### Used by
+* [browser-as-a-service](https://github.com/hfreire/browser-as-a-service) - A web browser :earth_americas: hosted as a service, to render your JavaScript web pages as HTML
 * [get-me-a-date](https://github.com/hfreire/get-me-a-date) - :heart_eyes: Help me get a :cupid: date tonight :first_quarter_moon_with_face:
 * [random-http-useragent](https://github.com/hfreire/random-http-useragent) - Get a random and legit user-agent :shipit: for your HTTP client
