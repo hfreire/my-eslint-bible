@@ -29,7 +29,6 @@ module.exports = {
     'mocha/no-exclusive-tests': 'error',
     'mocha/no-global-tests': 'error',
     'mocha/no-identical-title': 'error',
-    'unicorn/catch-error-name': [ 'error', { 'name': [ 'error', '_error' ] } ],
     'unicorn/filename-case': [ 'error', { 'case': 'kebabCase' } ],
     'unicorn/no-abusive-eslint-disable': 'error',
     'unicorn/no-process-exit': 'error',
