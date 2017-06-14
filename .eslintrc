@@ -13,6 +13,7 @@
     "after": true,
     "afterEach": true,
     "td": true,
+    "_": true,
     "should": true
   }
 }

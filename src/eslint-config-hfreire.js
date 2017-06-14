@@ -40,15 +40,12 @@ module.exports = {
   globals: {
     'describe': true,
     'it': true,
-    'expect': true,
-    'request': true,
     'before': true,
     'beforeEach': true,
     'after': true,
     'afterEach': true,
-    'mockery': true,
-    'sinon': true,
     'td': true,
-    '_': true
+    '_': true,
+    'should': true
   }
 }
