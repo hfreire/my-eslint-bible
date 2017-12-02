@@ -2,6 +2,9 @@
   "name": "eslint-config-hfreire",
   "description": "My ESLint configuration style rules bible",
   "version": "0.0.0",
+  "engines": {
+    "node": ">= 6.0.0"
+  },
   "main": "lib/index.js",
   "repository": {
     "type": "git",
@@ -49,7 +52,8 @@
   },
   "config": {
     "pre-git": {
-      "commit-msg": "conventional"
+      "commit-msg": "conventional",
+      "allow-untracked-files": true
     }
   },
   "release": {
