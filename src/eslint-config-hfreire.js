@@ -39,14 +39,26 @@ module.exports = {
     'unicorn/no-new-buffer': 'error'
   },
   globals: {
-    'describe': true,
-    'it': true,
-    'before': true,
-    'beforeEach': true,
-    'after': true,
-    'afterEach': true,
-    'td': true,
-    '_': true,
-    'should': true
+    describe: true,
+    fit: true,
+    it: true,
+    before: true,
+    beforeAll: true,
+    beforeEach: true,
+    after: true,
+    afterAll: true,
+    afterEach: true,
+    td: true,
+    _: true,
+    expect: true,
+    should: true,
+    jest: false,
+    pending: false,
+    pit: false,
+    require: false,
+    test: false,
+    xdescribe: false,
+    xit: false,
+    xtest: false
   }
 }
