@@ -10,10 +10,12 @@ module.exports = {
     'standard'
   ],
   env: {
-    node: true
+    node: true,
+    'jest/globals': true
   },
   plugins: [
     'json',
+    'jest',
     'mocha',
     'promise',
     'standard',
@@ -40,22 +42,15 @@ module.exports = {
   },
   globals: {
     describe: true,
-    xdescribe: false,
-    test: true,
-    xtest: true,
     it: true,
-    xit: true,
     before: true,
-    beforeAll: true,
     beforeEach: true,
     after: true,
-    afterAll: true,
     afterEach: true,
     td: true,
     _: true,
     expect: true,
     should: true,
-    jest: false,
     require: true
   }
 }
