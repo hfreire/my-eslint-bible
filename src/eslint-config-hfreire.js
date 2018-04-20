@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017, Hugo Freire <hugo@exec.sh>.
+ * Copyright (c) 2018, Hugo Freire <hugo@exec.sh>.
  *
  * This source code is licensed under the license found in the
  * LICENSE.md file in the root directory of this source tree.
@@ -10,10 +10,12 @@ module.exports = {
     'standard'
   ],
   env: {
-    node: true
+    node: true,
+    'jest/globals': true
   },
   plugins: [
     'json',
+    'jest',
     'mocha',
     'promise',
     'standard',
@@ -39,14 +41,16 @@ module.exports = {
     'unicorn/no-new-buffer': 'error'
   },
   globals: {
-    'describe': true,
-    'it': true,
-    'before': true,
-    'beforeEach': true,
-    'after': true,
-    'afterEach': true,
-    'td': true,
-    '_': true,
-    'should': true
+    describe: true,
+    it: true,
+    before: true,
+    beforeEach: true,
+    after: true,
+    afterEach: true,
+    td: true,
+    _: true,
+    expect: true,
+    should: true,
+    require: true
   }
 }
