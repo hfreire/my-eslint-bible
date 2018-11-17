@@ -11,7 +11,7 @@ git clone https://github.com/my-github-username/eslint-config-hfreire
 
 Change current directory
 ```
-cd get-me-date
+cd eslint-config-hfreire
 ```
 
 Install NPM dependencies
