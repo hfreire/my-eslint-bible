@@ -74,7 +74,7 @@
     "jest": "./node_modules/.bin/jest",
     "snyk:test": "./node_modules/.bin/snyk test",
     "snyk:protect": "./node_modules/.bin/snyk protect",
-    "babel": "mkdir -p lib && ./node_modules/.bin/babel src/ -d lib",
+    "babel": "mkdir -p lib && ./node_modules/.bin/babel src/ -d lib && mv ./lib/eslint-config-hfreire.js ./lib/index.js",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "semantic-release": "./node_modules/.bin/semantic-release",
     "clean": "rm -rf lib coverage",
