@@ -5,9 +5,6 @@
  * LICENSE.md file in the root directory of this source tree.
  */
 
-const assert = require('assert')
-global.assert = assert
-
 afterEach(() => {
   jest.resetModules()
 })
