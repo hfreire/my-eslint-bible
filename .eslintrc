@@ -3,17 +3,18 @@
     "standard"
   ],
   "env": {
-    "node": true
+    "node": true,
+    "jest/globals": true
   },
+  "plugins": [
+    "jest"
+  ],
   "globals": {
     "describe": true,
     "it": true,
-    "before": true,
+    "beforeAll": true,
     "beforeEach": true,
-    "after": true,
-    "afterEach": true,
-    "td": true,
-    "_": true,
-    "should": true
+    "afterAll": true,
+    "afterEach": true
   }
 }

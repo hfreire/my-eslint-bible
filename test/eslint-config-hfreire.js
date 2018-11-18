@@ -14,18 +14,13 @@ describe('ESlint configuration', () => {
     })
 
     it('should export configuration extending standard', () => {
-      subject.should.have.property('extends')
-      subject.extends.should.include('standard')
-    })
-
-    it('should export configuration using mocha plugin', () => {
-      subject.should.have.property('plugins')
-      subject.plugins.should.include('mocha')
+      expect(subject.extends).toBeDefined()
+      expect(subject.extends).toContain('standard')
     })
 
     it('should export configuration using jest plugin', () => {
-      subject.should.have.property('plugins')
-      subject.plugins.should.include('jest')
+      expect(subject.plugins).toBeDefined()
+      expect(subject.plugins).toContain('jest')
     })
   })
 })

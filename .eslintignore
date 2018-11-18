@@ -1,6 +1,5 @@
 .idea
-node_modules
-coverage
 lib
-share
-bin
+coverage
+node_modules
+package*.json

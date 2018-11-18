@@ -22,7 +22,6 @@
   "peerDependencies": {
     "eslint": ">=3.19.0",
     "eslint-plugin-json": ">=1.2.0",
-    "eslint-plugin-mocha": ">=4.9.0",
     "eslint-plugin-import": ">=2.3.0",
     "eslint-plugin-jest": ">=21.15.0",
     "eslint-plugin-node": ">=5.0.0",
@@ -33,24 +32,21 @@
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-preset-env": "1.6.1",
-    "chai": "4.1.2",
-    "chai-as-promised": "7.1.1",
-    "coveralls": "2.13.3",
-    "eslint": "4.14.0",
-    "eslint-config-standard": "10.2.1",
+    "coveralls": "3.0.2",
+    "eslint": "5.9.0",
+    "eslint-config-hfreire": "1.1.3",
     "eslint-plugin-import": "2.13.0",
     "eslint-plugin-jest": "22.0.0",
     "eslint-plugin-json": "1.2.1",
-    "eslint-plugin-mocha": "5.2.0",
     "eslint-plugin-node": "8.0.0",
     "eslint-plugin-promise": "4.0.1",
     "eslint-plugin-standard": "4.0.0",
     "eslint-plugin-unicorn": "6.0.1",
-    "istanbul": "0.4.5",
-    "mocha": "5.2.0",
+    "jest": "22.4.2",
+    "npm-merge-driver": "2.3.5",
     "pre-git": "3.17.1",
     "semantic-release": "15.12.0",
-    "testdouble": "3.3.0"
+    "snyk": "1.108.2"
   },
   "config": {
     "pre-git": {
@@ -58,15 +54,39 @@
       "allow-untracked-files": true
     }
   },
+  "snyk": true,
+  "jest": {
+    "testEnvironment": "node",
+    "setupTestFrameworkScriptFile": "./test/helper.js",
+    "testMatch": [
+      "<rootDir>/test/**.js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "./test/helper.js"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
+  },
+  "release": {
+    "analyzeCommits": "simple-commit-message"
+  },
   "scripts": {
-    "clean": "rm -rf lib coverage",
-    "lint": "node_modules/.bin/eslint .",
-    "coverage": "node_modules/.bin/istanbul cover --include-all-sources --root src --print detail ./node_modules/mocha/bin/_mocha -- --recursive test",
-    "test": "npm run lint && npm run coverage",
-    "compile": "npm run clean && mkdir -p lib && ./node_modules/.bin/babel src/ -d lib && mv ./lib/eslint-config-hfreire.js ./lib/index.js",
-    "prepublish": "npm run compile",
+    "eslint": "node_modules/.bin/eslint --ext .json --ext .js .",
+    "jest": "./node_modules/.bin/jest",
+    "snyk:test": "./node_modules/.bin/snyk test",
+    "snyk:protect": "./node_modules/.bin/snyk protect",
+    "babel": "mkdir -p lib && ./node_modules/.bin/babel src/ -d lib",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "semantic-release": "./node_modules/.bin/semantic-release",
-    "commit": "./node_modules/.bin/commit-wizard"
+    "clean": "rm -rf lib coverage",
+    "lint": "npm run eslint",
+    "prepare": "npm run snyk:protect",
+    "test": "npm run clean && npm run lint && npm run jest",
+    "compile": "npm run clean && npm run babel",
+    "commit": "./node_modules/.bin/commit-wizard",
+    "prepublish": "npm run compile"
   }
 }

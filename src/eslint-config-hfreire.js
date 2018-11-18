@@ -16,7 +16,6 @@ module.exports = {
   plugins: [
     'json',
     'jest',
-    'mocha',
     'promise',
     'standard',
     'unicorn'
@@ -30,11 +29,7 @@ module.exports = {
     'promise/no-return-wrap': 'error',
     'promise/param-names': 'error',
     'promise/catch-or-return': 'error',
-    'promise/no-native': 'error',
     'promise/no-callback-in-promise': 'error',
-    'mocha/no-exclusive-tests': 'error',
-    'mocha/no-global-tests': 'error',
-    'mocha/no-identical-title': 'error',
     'unicorn/filename-case': [ 'error', { 'case': 'kebabCase' } ],
     'unicorn/no-abusive-eslint-disable': 'error',
     'unicorn/no-process-exit': 'error',
@@ -43,14 +38,9 @@ module.exports = {
   globals: {
     describe: true,
     it: true,
-    before: true,
+    beforeAll: true,
     beforeEach: true,
-    after: true,
-    afterEach: true,
-    td: true,
-    _: true,
-    expect: true,
-    should: true,
-    require: true
+    afterAll: true,
+    afterEach: true
   }
 }
