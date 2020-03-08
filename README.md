@@ -1,11 +1,11 @@
 # My :pray: ESLint configuration :lipstick: style rules :book: bible
 
-[![Build Status](https://travis-ci.org/hfreire/eslint-config-hfreire.svg?branch=master)](https://travis-ci.org/hfreire/eslint-config-hfreire)
+[![](https://github.com/hfreire/eslint-config-hfreire/workflows/ci/badge.svg)](https://github.com/hfreire/eslint-config-hfreire/actions?workflow=ci)
 [![Coverage Status](https://coveralls.io/repos/github/hfreire/eslint-config-hfreire/badge.svg?branch=master)](https://coveralls.io/github/hfreire/eslint-config-hfreire?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/github/hfreire/eslint-config-hfreire/badge.svg)](https://snyk.io/test/github/hfreire/eslint-config-hfreire)
 [![](https://img.shields.io/github/release/hfreire/eslint-config-hfreire.svg)](https://github.com/hfreire/eslint-config-hfreire/releases)
 [![Version](https://img.shields.io/npm/v/eslint-config-hfreire.svg)](https://www.npmjs.com/package/eslint-config-hfreire)
-[![Downloads](https://img.shields.io/npm/dt/eslint-config-hfreire.svg)](https://www.npmjs.com/package/eslint-config-hfreire) 
+[![Downloads](https://img.shields.io/npm/dt/eslint-config-hfreire.svg)](https://www.npmjs.com/package/eslint-config-hfreire)
 
 > My :pray: ESLint configuration :lipstick: style rules :book: bible
 
@@ -14,7 +14,7 @@
 npm install eslint-config-hfreire
 ```
 ### How to contribute
-You can contribute either with code (e.g., new features, bug fixes and documentation) or by [donating 5 EUR](https://paypal.me/hfreire/5). You can read the [contributing guidelines](CONTRIBUTING.md) for instructions on how to contribute with code. 
+You can contribute either with code (e.g., new features, bug fixes and documentation) or by [donating 5 EUR](https://paypal.me/hfreire/5). You can read the [contributing guidelines](CONTRIBUTING.md) for instructions on how to contribute with code.
 
 All donation proceedings will go to the [Sverige för UNHCR](https://sverigeforunhcr.se), a swedish partner of the [UNHCR - The UN Refugee Agency](http://www.unhcr.org), a global organisation dedicated to saving lives, protecting rights and building a better future for refugees, forcibly displaced communities and stateless people.
 
