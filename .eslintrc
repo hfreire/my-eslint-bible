@@ -20,11 +20,24 @@
     "unicorn"
   ],
   "rules": {
+    "no-await-in-loop": "off",
+    "no-plusplus": "off",
+    "no-restricted-syntax": [
+      "error",
+      "ForInStatement",
+      "LabeledStatement",
+      "WithStatement"
+    ],
+    "no-underscore-dangle": "off",
+    "class-methods-use-this": "off",
+    "global-require": "off",
     "object-curly-spacing": [
       "error",
       "always"
     ],
     "space-before-function-paren": "error",
+    "import/prefer-default-export": "off",
+    "mport/no-extraneous-dependencies": "off",
     "promise/always-return": "off",
     "promise/no-return-wrap": "error",
     "promise/param-names": "error",

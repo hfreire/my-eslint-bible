@@ -27,16 +27,19 @@ module.exports = {
       'LabeledStatement',
       'WithStatement'
     ],
-
-    'object-curly-spacing': ['error', 'always'],
+    'no-underscore-dangle': 'off',
+    'class-methods-use-this': 'off',
+    'global-require': 'off',
+    'object-curly-spacing': [ 'error', 'always' ],
     'space-before-function-paren': 'error',
     'import/prefer-default-export': 'off',
+    'mport/no-extraneous-dependencies': 'off',
     'promise/always-return': 'off',
     'promise/no-return-wrap': 'error',
     'promise/param-names': 'error',
     'promise/catch-or-return': 'error',
     'promise/no-callback-in-promise': 'error',
-    'unicorn/filename-case': ['error', { case: 'kebabCase' }],
+    'unicorn/filename-case': [ 'error', { case: 'kebabCase' } ],
     'unicorn/no-abusive-eslint-disable': 'error',
     'unicorn/no-process-exit': 'error',
     'unicorn/no-new-buffer': 'error'
