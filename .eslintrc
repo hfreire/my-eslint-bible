@@ -1,20 +1,45 @@
 {
   "extends": [
-    "standard"
+    "airbnb-base",
+    "plugin:import/recommended",
+    "plugin:import/stage-0",
+    "plugin:jest/recommended",
+    "plugin:prettier/recommended"
   ],
   "env": {
     "node": true,
-    "jest/globals": true
+    "mocha": true,
+    "jest": true
   },
   "plugins": [
-    "jest"
+    "import",
+    "jest",
+    "json",
+    "mocha",
+    "node",
+    "promise",
+    "standard",
+    "unicorn"
   ],
-  "globals": {
-    "describe": true,
-    "it": true,
-    "beforeAll": true,
-    "beforeEach": true,
-    "afterAll": true,
-    "afterEach": true
+  "rules": {
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "space-before-function-paren": "error",
+    "promise/always-return": "off",
+    "promise/no-return-wrap": "error",
+    "promise/param-names": "error",
+    "promise/catch-or-return": "error",
+    "promise/no-callback-in-promise": "error",
+    "unicorn/filename-case": [
+      "error",
+      {
+        "case": "kebabCase"
+      }
+    ],
+    "unicorn/no-abusive-eslint-disable": "error",
+    "unicorn/no-process-exit": "error",
+    "unicorn/no-new-buffer": "error"
   }
 }

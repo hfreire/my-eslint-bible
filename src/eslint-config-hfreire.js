@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018, Hugo Freire <hugo@exec.sh>.
+ * Copyright (c) 2020, Hugo Freire <hugo@exec.sh>.
  *
  * This source code is licensed under the license found in the
  * LICENSE.md file in the root directory of this source tree.
@@ -7,40 +7,48 @@
 
 module.exports = {
   extends: [
-    'standard'
+    'airbnb-base',
+    'plugin:import/recommended',
+    'plugin:import/stage-0',
+    'plugin:jest/recommended',
+    'plugin:prettier/recommended'
   ],
   env: {
     node: true,
-    'jest/globals': true
+    mocha: true,
+    jest: true
   },
   plugins: [
-    'json',
+    'import',
     'jest',
+    'json',
+    'mocha',
+    'node',
     'promise',
     'standard',
     'unicorn'
   ],
   rules: {
-    'standard/computed-property-even-spacing': ['error', 'always'],
-    'array-bracket-spacing': [ 'error', 'always' ],
+    'no-await-in-loop': 'off',
+    'no-plusplus': 'off',
+    'no-restricted-syntax': [
+      'error',
+      'ForInStatement',
+      'LabeledStatement',
+      'WithStatement'
+    ],
+
     'object-curly-spacing': [ 'error', 'always' ],
     'space-before-function-paren': 'error',
+    'import/prefer-default-export': 'off',
     'promise/always-return': 'off',
     'promise/no-return-wrap': 'error',
     'promise/param-names': 'error',
     'promise/catch-or-return': 'error',
     'promise/no-callback-in-promise': 'error',
-    'unicorn/filename-case': [ 'error', { 'case': 'kebabCase' } ],
+    'unicorn/filename-case': [ 'error', { case: 'kebabCase' } ],
     'unicorn/no-abusive-eslint-disable': 'error',
     'unicorn/no-process-exit': 'error',
     'unicorn/no-new-buffer': 'error'
-  },
-  globals: {
-    describe: true,
-    it: true,
-    beforeAll: true,
-    beforeEach: true,
-    afterAll: true,
-    afterEach: true
   }
 }
