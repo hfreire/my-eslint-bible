@@ -15,19 +15,9 @@ module.exports = {
   ],
   env: {
     node: true,
-    mocha: true,
     jest: true
   },
-  plugins: [
-    'import',
-    'jest',
-    'json',
-    'mocha',
-    'node',
-    'promise',
-    'standard',
-    'unicorn'
-  ],
+  plugins: ['import', 'jest', 'json', 'node', 'promise', 'standard', 'unicorn'],
   rules: {
     'no-await-in-loop': 'off',
     'no-plusplus': 'off',

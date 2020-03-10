@@ -9,14 +9,14 @@ import subject from '../src/eslint-config-hfreire'
 
 describe('ESlint configuration', () => {
   describe('when exporting', () => {
-    it('should export configuration extending airbnb', () => {
+    it('should export configuration extending airbnb-base', () => {
       expect(subject.extends).toBeDefined()
-      expect(subject.extends).toContain('standard')
+      expect(subject.extends).toContain('airbnb-base')
     })
 
-    it('should export configuration extending jest recommended', () => {
-      expect(subject.plugins).toBeDefined()
-      expect(subject.plugins).toContain('plugin:jest/recommended')
+    it('should export configuration extending jest/recommended', () => {
+      expect(subject.extends).toBeDefined()
+      expect(subject.extends).toContain('plugin:jest/recommended')
     })
   })
 })

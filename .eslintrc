@@ -8,14 +8,12 @@
   ],
   "env": {
     "node": true,
-    "mocha": true,
     "jest": true
   },
   "plugins": [
     "import",
     "jest",
     "json",
-    "mocha",
     "node",
     "promise",
     "standard",
