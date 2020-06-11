@@ -31,6 +31,7 @@ module.exports = {
     'class-methods-use-this': 'off',
     'global-require': 'off',
     'object-curly-spacing': ['error', 'always'],
+    'object-shorthand': ['error', 'always', { ignoreConstructors: true }],
     'space-before-function-paren': 'error',
     'import/prefer-default-export': 'off',
     'mport/no-extraneous-dependencies': 'off',
